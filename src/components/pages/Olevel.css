@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+h1.olevel-text-h2{
+    text-align: center;
+    color: rgb(191, 27, 27);
+}
+h2.olevel-text-h2{
+    text-align: center;
+    color: rgb(191, 27, 27);
+}
+
+
+.row-fluid {
+    text-align:center;
+ } 
+  button {
+      display:inline-block;
+      cursor: pointer;
+      background: linear-gradient(90deg, rgb(223, 210, 210) 0%, rgb(109, 95, 95) 100%);
+ }

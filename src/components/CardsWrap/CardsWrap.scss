@@ -1,0 +1,106 @@
+$image-small: 18px;
+$image-normal: 25px;
+
+.cards-wrap {
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    gap: 20px;
+    min-height: 250px;
+    width: 100%;
+    padding: 20px;
+    
+    .card {
+        width: 100%;
+        border-radius: 20px;
+        position: relative;
+        max-width: 300px;
+        
+        .image {
+            border-radius: 20px;
+            object-fit: cover;
+            width: 100%;
+            min-height: 300px;
+            width: 300px;
+        }
+
+        .content {
+            top: 0;
+            left: 0;
+            position: absolute;
+            padding: 20px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: space-between;
+            color: #fff;
+
+            .title {
+                font-size: 1.5rem;
+            }
+
+            .video-icon {
+                position: absolute;
+                top: 5px;
+                right: -17px;
+                object-fit: contain;
+                width: $image-normal;
+                height: $image-normal;
+                
+                &.small {
+                    width: $image-small;
+                    height: $image-small;
+                    right: -10px;
+                }
+            }
+
+            .label-wrap{
+                position: relative;
+                display: flex;
+                align-items: center;
+                width: max-content;
+            }
+
+            .label {
+                padding: 5px 10px 5px 10px;
+                border-radius: 10px;
+                width: max-content;
+                background-color: #FCCC75;
+
+                &.light-blue {
+                    background-color: #4DC9D1;
+                }
+                &.royal-blue {
+                    background-color: #0082CD;
+                }
+                &.purple {
+                    background-color: #8D5EF2;
+                }
+
+                &.curved {
+                    border-radius: 20px;
+                }
+            }
+            
+            .sub-content {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .labels {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    flex-wrap: wrap;
+
+                    .label-wrap {
+                        .video-icon {
+                            top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 

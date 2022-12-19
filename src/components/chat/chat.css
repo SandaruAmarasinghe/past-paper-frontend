@@ -1,0 +1,36 @@
+:root {
+  --primary: #fff;
+}
+.display-container{
+      row-gap: 20px;
+}
+.heading-one{
+   font-size: 30px;
+   text-align: center; 
+} 
+.image-booking{
+   border-radius: 20px;
+   border: rgb(251, 19, 19) solid 6px;
+}
+.details-display{
+  text-align: center; 
+}
+
+.buttonBook {
+  display:block; 
+  margin: 20px
+  auto;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  background: rgb(251, 19, 19) ;
+  color: #f3efef;
+  transition: 250ms;
+  font-size: large;
+}
+.buttonBook:hover{
+  transition: all 0.3s ease-out;
+  background: #f3efef;
+  color: rgb(251, 19, 19) ;
+  transition: 250ms;
+}
